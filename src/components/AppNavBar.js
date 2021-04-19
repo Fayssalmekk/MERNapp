@@ -24,7 +24,8 @@ class AppNavBar extends Component {
 render(){
     return (
         <div>
-        <Navbar color="dark" dark>
+        
+        <Navbar color="dark" dark className="mb-5">
             <Container>
                 <NavbarBrand href="/" className="mr-auto">ShoppingList</NavbarBrand>
                 <NavbarToggler onClick={this.toggle} className="mr-2" />
@@ -38,6 +39,7 @@ render(){
                 </Collapse>
             </Container>    
         </Navbar>
+        <div className="mb-5">.</div>
         </div>
             );
      }
